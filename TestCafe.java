@@ -32,7 +32,7 @@ public class TestCafe {
     //         appTest.addCustomer(customers);
     //         System.out.println("\n");
     //     }
-        appTest.printPriceChart("Columbian Coffee Grounds", 15.0, 3);
+        appTest.printPriceChart("Columbian Coffee Grounds", 2, 4);
 
     }
 

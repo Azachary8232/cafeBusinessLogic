@@ -40,7 +40,7 @@ public class CafeUtil {
     public void  printPriceChart(String product, double price, int maxQuantity) {
         System.out.printf("%s\n", product);
         for( int i = 1; i <= maxQuantity; i++) {
-            System.out.printf("%s - %s\n", i, price*i);
+            System.out.printf("%s - %s\n", i, (price*i) - (.5 * (i-1)));
         }
     }
 
