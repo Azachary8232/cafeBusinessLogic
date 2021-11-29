@@ -27,22 +27,22 @@ public class CafeUtil {
         }
     }
 
-    public void addCustomer(ArrayList<String>customers){
-        ArrayList<String> customer = customers;
-        System.out.println("Please enter your name:");
-        String username = System.console().readLine();
-        System.out.printf("Hello, %s!", username);
-        System.out.printf(" There are %s people in front of you.", customer.size());
-        customers.add(username);
-        System.out.println(customer);
-    }
-
-    // public String printPriceChart(String product, double price, int maxQuantity) {
-    //     String item = product \n;
-    //     for( int i = 1; i < maxQuantity; i++) {
-    //         item += price \n
-    //     }
+    // public void addCustomer(ArrayList<String>customers){
+    //     ArrayList<String> customer = customers;
+    //     System.out.println("Please enter your name:");
+    //     String username = System.console().readLine();
+    //     System.out.printf("Hello, %s!", username);
+    //     System.out.printf(" There are %s people in front of you.", customer.size());
+    //     customers.add(username);
+    //     System.out.println(customer);
     // }
+
+    public void  printPriceChart(String product, double price, int maxQuantity) {
+        System.out.printf("%s\n", product);
+        for( int i = 1; i <= maxQuantity; i++) {
+            System.out.printf("%s - %s\n", i, price*i);
+        }
+    }
 
 
 
