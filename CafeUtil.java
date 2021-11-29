@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class CafeUtil {
 
@@ -19,8 +21,9 @@ public class CafeUtil {
 
     public void displayMenu(ArrayList<String>menuItems){
         String menu = "";
-        for( int i = 0; i < menuItems.length; i++){
-            System.out.println(i + menuItems[i]);
+        for( int i = 0; i < menuItems.size(); i++){
+            String name = menuItems.get(i);
+            System.out.println(i + " " + name);
         }
     }
 
